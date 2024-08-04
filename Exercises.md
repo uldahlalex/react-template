@@ -11,13 +11,19 @@ There are some files you don't need - I recommend simply ignoring these - you ca
 
 You can start the app with **npm install** and **npm run dev** and navigating to localhost port 4200.
 
-I have made some example solutions inside solutions.tsx in case you're curious.
+## Exercises in natural chronological order 
+- Present the value of a variable inside a component.
+- Conditionally render the value based on a boolean expression.
+- Put a component inside another component.
+- Present some component 3 times of types without duplicating the code (loop / iterate)
+- Make a button with the prop "onClick" that logs "Button clicked" to the console.
+- Make an "input" HTML element that logs the value of the input to the console when the user types.
+- Use the useState hook to make a counter that increments by 1 when a button is clicked.
+- Use the "input" HTML element to change the value of a variable presented in the component.
+- Make a button and an "input" HTML element. The button has to be "disabled" when the input is empty.
+- Iterate over a list of strings and present them in the UI as "div" elements. When you click one of the strings, it should remove it.
 
-## Exercises in ascending order of difficulty
-
-1) Present the value of a variable inside a component.
-2) Conditionally render the value based on a boolean expression.
-3) Put a component inside another component.
-4) Present the values X number of types without duplicating the code.
-5) Change the presented value on a button click.
-6) Make an input element + a button that can add elements to a list on the screen
+- The final boss: Implement full "CRUD" functionality for a list of strings.
+  - Create a new string from the input field and add it to the list presented in the UI. The button should be disabled if the strings are shorter than 3 characters.
+  - Update a string using a button and input field for each "div" element.
+  - Delete a string using a button for each "div" element.
