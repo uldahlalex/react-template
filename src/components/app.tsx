@@ -1,20 +1,18 @@
-
-import {BrowserRouter as Router, Route, Routes} from "react-router-dom";
+import {BrowserRouter, Route, Routes} from "react-router-dom";
 import React from "react";
-import Exercises from "./exericses.tsx";
 import {Toaster} from "react-hot-toast";
-
+import Home from "./Home.tsx";
 
 
 const App = () => {
 
     return (<>
-        <Router>
+        <BrowserRouter>
             <Toaster/>
             <Routes>
+                <Route path="/" element={<Home/>}/>
             </Routes>
-        </Router>
-        <Exercises />
+        </BrowserRouter>
     </>)
 }
 export default App;
