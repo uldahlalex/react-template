@@ -1,4 +1,4 @@
-# React component exercises
+# React component exercises (These are exercises for day 2 of the crash course)
 
 ### Intro
 These exercises try to appeal to a more DIY-ish style of learning, where you try to solve small tasks on your own. 
