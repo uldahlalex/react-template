@@ -21,11 +21,14 @@ export default function FlexboxDemo() {
             <button className="btn btn-primary">Multiple lines if not enough space</button>
             <button className="btn btn-primary">Multiple lines if not enough space</button>
         </div>
+
+
+
     }
 
     return <>
         <CenteredInADiv/>
-        <SpaceAround />
-        <MultipleLinesOfElements />
+        <SpaceAround/>
+        <MultipleLinesOfElements/>
     </>
 }

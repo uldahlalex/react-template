@@ -31,13 +31,15 @@ export default function FormDemo() {
     return <>
 
         <div className="w-64 flex flex-wrap">
-            <div className="form-control">
-                <label className="label cursor-pointer">
+
+            <label className="label cursor-pointer">
                     <span className="label-text">Remember me</span>
-                    <input type="checkbox" onChange={() => setForm({...form, rememberMe: !form.rememberMe})}
-                           checked={form.rememberMe} className="checkbox"/>
+                    <input type="checkbox"
+                           onChange={() => setForm({...form, rememberMe: !form.rememberMe})}
+                           checked={form.rememberMe}
+                           className="checkbox"/>
                 </label>
-            </div>
+
 
             <input
                 type="file"
@@ -98,7 +100,6 @@ export default function FormDemo() {
             The form state is: {JSON.stringify(form)}
 
         </pre>
-
 
     </>
 }
