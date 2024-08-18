@@ -7,6 +7,9 @@ import {useAtom} from "jotai";
 import {ThemeAtom} from "../atoms/ThemeAtom.tsx";
 import Home from "./Home.tsx";
 import ProductDetail from "./ProductDetail.tsx";
+import FormDemo from "./UIExamples/FormDemo.tsx";
+import FlexboxDemo from "./UIExamples/FlexboxDemo.tsx";
+import ModalDemo from "./UIExamples/ModalDemo.tsx";
 
 
 const App = () => {
@@ -28,6 +31,11 @@ const App = () => {
         <Routes>
             <Route path="/" element={<Home/>}/>
             <Route path="/products/:id" element={<ProductDetail/>}/>
+            <Route path="/ui" element={<>
+                <FormDemo/>
+                <FlexboxDemo />
+                <ModalDemo />
+            </>}/>
         </Routes>
         <DevTools/>
 

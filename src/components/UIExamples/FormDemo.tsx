@@ -30,7 +30,7 @@ export default function FormDemo() {
 
     return <>
 
-        <div className="w-64">
+        <div className="w-64 flex flex-wrap">
             <div className="form-control">
                 <label className="label cursor-pointer">
                     <span className="label-text">Remember me</span>
@@ -78,9 +78,11 @@ export default function FormDemo() {
                 <option value="Greedo">Greedo</option>
             </select>
 
-            <input value={form.textInputValue} onChange={e => setForm({...form,  textInputValue: e.target.value})} type="text" placeholder="Type here" className="input input-bordered w-full max-w-xs"/>
+            <input value={form.textInputValue} onChange={e => setForm({...form, textInputValue: e.target.value})}
+                   type="text" placeholder="Type here" className="input input-bordered w-full max-w-xs"/>
 
-            <input type="datetime-local" value={form.dateInputValue} onChange={e => setForm({...form, dateInputValue: e.target.value})} />
+            <input type="datetime-local" value={form.dateInputValue}
+                   onChange={e => setForm({...form, dateInputValue: e.target.value})}/>
 
             {form.imageUrl && (
                 <img
@@ -89,11 +91,14 @@ export default function FormDemo() {
                     className="mt-4 max-w-xs"
                 />
             )}
-        </div>
 
-        <div>
-            The form state is: {JSON.stringify(form)}
+
         </div>
+        <pre className="whitespace-pre-wrap break-words">
+            The form state is: {JSON.stringify(form)}
+
+        </pre>
+
 
     </>
 }
